@@ -557,6 +557,55 @@ body.light hr.separator {
 .about .main-content {
   padding-bottom: 20px;
 }
+.about .main-content .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.about .main-content .about-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;;
+}
+.about .main-content .about-text h4 span{
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-left: 15px;
+  font-weight: 800;
+}
+.about .main-content .skill-section{
+  margin-top:40px;
+  margin-bottom: 50px;
+}
+.about .main-content .skill-section h1{
+  text-align:center;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+.about .main-content .skill-content{
+  margin:20px;
+}
+.about .main-content .skill-content button{
+  border-radius:10px;
+  font-weight:600;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+}
+.about .main-content .skill-content h4{
+  margin-bottom:15px;
+}
+
+
+
+
+
+
+
+
 
 /* Personal Info List */
 
