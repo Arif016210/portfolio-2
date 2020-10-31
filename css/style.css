@@ -1,45 +1,4 @@
-/*
-Template Name: Tunis - Personal Portfolio
-Author: celtano
-Author URI: http://themeforest.net/user/celtano
-Description: Tunis - Personal Portfolio
-Version: 1.0
-*/
 
-/*------------------------------------------------------------------
-[Table of contents]
-	+ General
-	    - Miscellaneous
-		- Light Body
-		- Buttons
-		- Page Title
-	+ Header
-		- Desktop Navigation
-		- Mobile Navigation
-	+ Pages
-		- Homepage
-		+ About
-		    - Personal Info List
-			- Box Stats
-			- Resume
-			- Skills
-		+ Portfolio
-		    - Grid
-		    + Slideshow
-                - Embedded Videos
-                - Carousel
-                - Navigation
-        + Contact
-            - Left Side
-            - Contact Form
-		+ Blog
-            - Latest Posts
-            - Pagination
-	- Responsive Design Styles
--------------------------------------------------------------------*/
-
-/* [ GENERAL ] */
-/*================================================== */
 
 /*** Miscellaneous ***/
 
@@ -607,142 +566,6 @@ body.light hr.separator {
 
 
 
-/* Personal Info List */
-
-.about .about-list li:not(:last-child) {
-  padding-bottom: 20px;
-}
-
-.about .about-list .title {
-  opacity: .8;
-  text-transform: capitalize;
-}
-
-.about .about-list .value {
-  font-weight: 600;
-}
-
-/* Box Stats */
-
-.about .box-stats {
-  padding: 20px 30px 25px 40px;
-  border-radius: 5px;
-  border: 1px solid #252525;
-}
-
-.about .box-stats.with-margin {
-  margin-bottom: 30px;
-}
-
-.about .box-stats h3 {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.about .box-stats h3:after {
-  content: '+';
-  position: absolute;
-  right: -24px;
-  font-size: 33px;
-  font-weight: 300;
-  top: 2px;
-}
-
-.about .box-stats p {
-  padding-left: 45px;
-}
-
-.about .box-stats p:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 13px;
-  width: 30px;
-  height: 1px;
-  background: #777;
-}
-
-/* Resume */
-
-.about .resume-box ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.about .resume-box li {
-  position: relative;
-  padding: 0 20px 0 60px;
-  margin: 0 0 50px;
-}
-
-.about .resume-box li:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20px;
-  bottom: 0;
-  border-left: 1px solid #333;
-}
-
-.about .resume-box .icon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  line-height: 40px;
-  text-align: center;
-  z-index: 1;
-  border-radius: 50%;
-  color: #fff;
-  background-color: #252525;
-}
-
-.about .resume-box .time {
-  color: #fff;
-  font-size: 12px;
-  padding: 1px 10px;
-  display: inline-block;
-  margin-bottom: 12px;
-  border-radius: 20px;
-  font-weight: 600;
-  background-color: #252525;
-  opacity: .8;
-}
-
-.about .resume-box h5 {
-  font-size: 18px;
-  margin: 7px 0 10px;
-}
-
-.about .resume-box p {
-  margin: 0;
-  color: #eee;
-  font-size: 14px;
-}
-
-.about .resume-box .place {
-  opacity: .8;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  padding-left: 26px;
-}
-
-.about .resume-box .place:before {
-  position: absolute;
-  content: '';
-  width: 10px;
-  height: 2px;
-  background-color: #fff;
-  left: 7px;
-  top: 9px;
-  opacity: .8;
-}
 
 /* Skills */
 
@@ -760,279 +583,68 @@ body.light hr.separator {
   background-color: #111;
 }
 
+
+
 /*** Portfolio ***/
 .portfolio .main-content {
   padding-bottom: 60px;
   margin-top: -15px;
 }
 
-/* Grid */
-
-.portfolio .grid-gallery ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.portfolio .grid-gallery figure {
-  margin: 0;
-}
-
-.portfolio .grid-gallery figure img {
-  display: block;
-  width: 100%;
+.portfolio .main-content .card{
+  background-color: darkslategray;
+  border: 1px solid bisque;
   border-radius: 5px;
-  transition: .3s;
+  width:350px;
+  height: 500px;
+  transition: all 0.5s linear;
+}
+.portfolio .main-content .card:hover{
+  transform: scale(1.03);
+}
+.portfolio .main-content .card .card-img-top{
+  margin-top:1px;
+  height: 200px;
+}
+.portfolio .main-content .card .card-technology{
+  margin: 20px 0px;
+}
+.portfolio .main-content .card .card-technology button{
+  background: darkgray;
+  border: none;
+  margin-top: 10px;
+
+}
+.portfolio .main-content .card .card-link{
+
+}
+.portfolio .main-content .card .card-link a{
+  margin-right: 20px;
+}
+.portfolio .main-content .card .card-link .fa{
+  font-size:20px;
 }
 
-.portfolio .grid-wrap {
-  margin: 0 auto;
+/* Portfolio Responsive  */
+@media (min-width: 576px) and (max-width: 767px){
+
+  .portfolio .main-content .card{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+@media (min-width: 320px) and (max-width: 575px){
+
+  .portfolio .main-content .card{
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
-.portfolio .grid {
-  margin: 0 auto;
-}
 
-.portfolio .grid li {
-  width: 33.333333%;
-  float: left;
-  cursor: pointer;
-  padding: 15px;
-}
 
-.portfolio .grid figure {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 5px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio .grid figure img {
-  display: block;
-  position: relative;
-}
-
-.portfolio .grid li a {
-  overflow: hidden;
-}
-
-.portfolio .grid li figure div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.portfolio .grid li figure div span {
-  margin: 0;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 18px;
-}
-
-/* Slideshow */
-
-.portfolio .slideshow {
-  position: fixed;
-  background: rgba(0,0,0,0.85);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1111;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-  transition: opacity 0.5s, visibility 0s 0.5s;
-  text-align: left;
-}
-
-.portfolio .slideshow-open .slideshow {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-.portfolio .slideshow ul {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translate3d(0,0,150px);
-  transform: translate3d(0,0,150px);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-.portfolio .slideshow ul.animatable > li {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-.portfolio .slideshow-open .slideshow ul {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.portfolio .slideshow ul > li {
-  width: 660px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -280px 0 0 -330px;
-  visibility: hidden;
-}
-
-.portfolio .slideshow ul > li.show {
-  visibility: visible;
-}
-
-.portfolio .slideshow ul > li:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.7);
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  z-index: 111;
-  border-radius: 10px;
-}
-
-.portfolio .slideshow ul > li.current:after {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
-  transition: opacity 0.3s, visibility 0s 0.3s;
-}
-
-.portfolio .slideshow figure {
-  width: 100%;
-  height: 100%;
-  background: #252525;
-  padding: 30px;
-  overflow: auto;
-  border-radius: 10px;
-}
-
-.portfolio .slideshow a {
-  text-decoration: underline;
-}
-
-.portfolio .slideshow figcaption {
-  margin-bottom: 15px;
-}
-
-.portfolio .slideshow figcaption h3 {
-  text-transform: uppercase;
-  padding: 10px 0 20px;
-  font-weight: 700;
-  text-align: center;
-  font-size: 33px;
-}
-
-/* Embedded Videos */
-
-.portfolio .slideshow .videocontainer,
-.portfolio .slideshow .responsive-video {
-  max-width: 100%;
-  border-radius: 4px;
-  display: block;
-  object-fit: cover;
-}
-
-.portfolio .slideshow .videocontainer {
-  position: relative;
-  padding-bottom: 56.20%;
-  padding-top: 0;
-  height: 0;
-  max-width: 100%;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.portfolio .slideshow .videocontainer iframe,
-.portfolio .slideshow .videocontainer object,
-.portfolio .slideshow .videocontainer embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Carousel */
-
-.portfolio .slideshow .carousel-indicators {
-  bottom: 0;
-  background: rgba(0,0,0,.4);
-  padding: 10px 0;
-  margin: 0;
-}
-
-.portfolio .slideshow .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 7px;
-  background-color: #fff;
-  opacity: 1;
-}
-
-/* Navigation */
-
-.portfolio .slideshow nav span {
-  position: fixed;
-  z-index: 1000;
-  text-align: center;
-  cursor: pointer;
-  padding: 200px 30px;
-  color: #fff;
-}
-
-.portfolio .slideshow nav span.nav-prev,
-.portfolio .slideshow nav span.nav-next {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 41px;
-  line-height: 58px;
-}
-
-.portfolio .slideshow nav span.nav-prev {
-  left: 0;
-}
-
-.portfolio .slideshow nav span.nav-next {
-  right: 0;
-}
-
-.portfolio .slideshow nav span.nav-close {
-  top: 30px;
-  right: 30px;
-  padding: 0;
-}
 
 /*** Contact ***/
 .contact .main-content {
@@ -1125,25 +737,7 @@ body.light hr.separator {
   border-radius: 30px;
 }
 
-.contact .contactform .output_message.success {
-  background: #28a745;
-}
 
-.contact .contactform .output_message.success:before {
-  font-family: FontAwesome;
-  content: "\f14a";
-  padding-right: 10px;
-}
-
-.contact .contactform .output_message.error {
-  background: #dc3545;
-}
-
-.contact .contactform .output_message.error:before {
-  font-family: FontAwesome;
-  content: "\f071";
-  padding-right: 10px;
-}
 
 /*** Blog ***/
 
@@ -1231,35 +825,11 @@ body.light hr.separator {
   color: #fff !important;
 }
 
-/* Blog Post */
 
-.blog-post article {
-  max-width: 700px;
-  margin: 0 auto;
-}
 
-.blog-post article h1 {
-  font-weight: 600;
-  margin: 13px 0 20px;
-}
 
-.blog-post article img {
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
 
-.blog-post .meta {
-  color: #eee;
-  font-size: 13px;
-}
 
-.blog-post .meta span {
-  padding-right: 15px;
-}
-
-.blog-post .meta i {
-  padding-right: 3px;
-}
 
 /* [ RESPONSIVE DESIGN STYLES ] */
 

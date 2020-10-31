@@ -12,9 +12,7 @@ body.light #menu li.active a,
 .blog .post-container:hover .post-content .entry-header h3 a,
 .blog .post-content .entry-header h3 a:hover,
 .contact .custom-span-contact i,
-.portfolio .slideshow figcaption h3,
-.portfolio .slideshow a,
-.portfolio .grid figure:hover figcaption,
+.portfolio .main-content .card .card-link .fa,
 .blog-post .meta i{
 	color: #4169e1;
 }
@@ -49,6 +47,7 @@ body.light.blog .page-item.active .page-link,
 body.light.blog .page-link:hover{
 	border: 1px solid #4169e1;
 }
+.portfolio .main-content .card .card-img-top,
 .blog .post-thumb {
 	border-bottom: 5px solid #4169e1;
 }
